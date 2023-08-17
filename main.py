@@ -4,11 +4,11 @@ if '__main__' == __name__:
     etl = ETL()
     # make connection database
     conn = etl.connection(
-        username='your_db_username', 
-        password='your_db_password', 
-        host='your_db_host', 
-        port=your_port, 
-        database='your_db_name', 
+        username='your_db_username', # ex: 'root'
+        password='your_db_password', # ex: 'toor'
+        host='your_db_host',  # ex: 'localhost'
+        port=your_port, # ex: 3306
+        database='your_db_name', # ex: movielens_movie
         database_type='mysql+pymysql'
         )
     # read data
